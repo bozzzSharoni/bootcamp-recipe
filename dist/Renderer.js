@@ -12,11 +12,13 @@ class Renderer{
        <a href= '${d.href}'> ${d.title} </a>
        <br><br>
        <img src= '${d.thumbnail}'>
+       Ingredients:
           <br><br>
           </div>
         `)
         for(let i of d.ingredients){
         $('.title').append(`
+        
          <ul class= 'ingredients'>
          <li>${i}</li>
          </ul>
