@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+
     <title>Recipe</title>
 </head>
 
@@ -15,6 +17,21 @@
 
     <input name='recipe' type='text' placeholder='Enter an ingredient'>
     <button>Search</button>
+    <!-- <script id="entry-template" type="text/x-handlebars-template">
+
+        {{#each data}}
+        
+            <div>{{title}}</div>
+            <div>{{ingredients}}</div>
+            <div><img src='{{thumbnail}}'></div>
+            <div><a href= '{{href}}'></a></div>
+        
+          {{/each}}
+
+      </script> -->
+      <div class='data'>
+
+      </div>
     <script src='Renderer.js'></script>
     <script src='main.js'></script>
 </body>
