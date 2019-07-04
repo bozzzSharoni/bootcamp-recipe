@@ -18,8 +18,7 @@ app.get('/recipes/:ingredient', function (req, res) {
     const ingredient = req.params.ingredient
     request.get(`https://recipes-goodness.herokuapp.com/recipes/${ingredient}`, function (error, response, body) {
         console.log('error: ', error)
-        const ing = JSON.parse(body)
-        console.log(ing)
+        const ing = JSON.parse(body).results
         res.json(ing)
     })
     
